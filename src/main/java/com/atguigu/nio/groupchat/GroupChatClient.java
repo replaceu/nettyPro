@@ -24,7 +24,8 @@ public class GroupChatClient {
 
         selector = Selector.open();
         //连接服务器
-        socketChannel = socketChannel.open(new InetSocketAddress("127.0.0.1", PORT));
+        InetSocketAddress inetSocketAddress = new InetSocketAddress("127.0.0.1", PORT);
+        socketChannel = socketChannel.open(inetSocketAddress);
         //设置非阻塞
         socketChannel.configureBlocking(false);
         //将channel 注册到selector
@@ -49,15 +50,11 @@ public class GroupChatClient {
 
     //读取从服务器端回复的消息
     public void readInfo() {
-
         try {
-
             int readChannels = selector.select();
             if(readChannels > 0) {//有可以用的通道
-
                 Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
                 while (iterator.hasNext()) {
-
                     SelectionKey key = iterator.next();
                     if(key.isReadable()) {
                         //得到相关的通道
@@ -73,8 +70,7 @@ public class GroupChatClient {
                 }
                 iterator.remove(); //删除当前的selectionKey, 防止重复操作
             } else {
-                //System.out.println("没有可以用的通道...");
-
+                System.out.println("没有可以用的通道...");
             }
 
         }catch (Exception e) {
@@ -83,14 +79,12 @@ public class GroupChatClient {
     }
 
     public static void main(String[] args) throws Exception {
-
         //启动我们客户端
         GroupChatClient chatClient = new GroupChatClient();
 
         //启动一个线程, 每个3秒，读取从服务器发送数据
         new Thread() {
             public void run() {
-
                 while (true) {
                     chatClient.readInfo();
                     try {

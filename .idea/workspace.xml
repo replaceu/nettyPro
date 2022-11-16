@@ -15,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/NIOClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/NIOClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/NIOServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/ScatteringAndGatheringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/ScatteringAndGatheringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +248,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\NettyPro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NIOClient">
+  <component name="RunManager" selected="Application.GroupChatServer">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -254,13 +256,27 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="ClientBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.dubborpc.customer.ClientBootstrap" />
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatClient" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.dubborpc.customer.*" />
+          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatServer" />
+      <module name="NettyPro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,20 +319,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.dubborpc.provider.ServerBootstrap" />
-      <module name="NettyPro" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.dubborpc.provider.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -367,19 +369,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ServerBootstrap" />
-      <item itemvalue="Application.ClientBootstrap" />
       <item itemvalue="Application.ScatteringAndGatheringTest" />
       <item itemvalue="Application.NIOServer" />
       <item itemvalue="Application.NIOClient" />
+      <item itemvalue="Application.GroupChatClient" />
+      <item itemvalue="Application.GroupChatServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GroupChatClient" />
+        <item itemvalue="Application.GroupChatServer" />
         <item itemvalue="Application.NIOClient" />
         <item itemvalue="Application.NIOServer" />
         <item itemvalue="Application.ScatteringAndGatheringTest" />
-        <item itemvalue="Application.ClientBootstrap" />
-        <item itemvalue="Application.ServerBootstrap" />
       </list>
     </recent_temporary>
   </component>
@@ -456,7 +458,7 @@
       <workItem from="1572507962094" duration="2953000" />
       <workItem from="1572510401121" duration="1693000" />
       <workItem from="1572669726673" duration="606000" />
-      <workItem from="1668567073874" duration="9856000" />
+      <workItem from="1668567073874" duration="15617000" />
     </task>
     <servers />
   </component>

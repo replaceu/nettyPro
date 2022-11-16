@@ -38,16 +38,12 @@ public class GroupChatServer {
 
     //监听
     public void listen() {
-
         System.out.println("监听线程: " + Thread.currentThread().getName());
         try {
-
             //循环处理
             while (true) {
-
                 int count = selector.select();
                 if(count > 0) {//有事件处理
-
                     //遍历得到selectionKey 集合
                     Iterator<SelectionKey> iterator = selector.selectedKeys().iterator();
                     while (iterator.hasNext()) {
@@ -58,18 +54,15 @@ public class GroupChatServer {
                         if(key.isAcceptable()) {
                             SocketChannel sc = listenChannel.accept();
                             sc.configureBlocking(false);
-                            //将该 sc 注册到seletor
+                            //将该 sc 注册到selector
                             sc.register(selector, SelectionKey.OP_READ);
 
                             //提示
                             System.out.println(sc.getRemoteAddress() + " 上线 ");
-
                         }
                         if(key.isReadable()) { //通道发送read事件，即通道是可读的状态
                             //处理读 (专门写方法..)
-
                             readData(key);
-
                         }
                         //当前的key 删除，防止重复处理
                         iterator.remove();
@@ -92,7 +85,7 @@ public class GroupChatServer {
     //读取客户端消息
     private void readData(SelectionKey key) {
 
-        //取到关联的channle
+        //取到关联的channel
         SocketChannel channel = null;
 
         try {
@@ -108,7 +101,6 @@ public class GroupChatServer {
                 String msg = new String(buffer.array());
                 //输出该消息
                 System.out.println("form 客户端: " + msg);
-
                 //向其它的客户端转发消息(去掉自己), 专门写一个方法来处理
                 sendInfoToOtherClients(msg, channel);
             }
@@ -136,7 +128,6 @@ public class GroupChatServer {
 
             //通过 key  取出对应的 SocketChannel
             Channel targetChannel = key.channel();
-
             //排除自己
             if(targetChannel instanceof  SocketChannel && targetChannel != self) {
 
@@ -148,7 +139,6 @@ public class GroupChatServer {
                 dest.write(buffer);
             }
         }
-
     }
 
     public static void main(String[] args) {
@@ -162,10 +152,8 @@ public class GroupChatServer {
 //可以写一个Handler
 class MyHandler {
     public void readData() {
-
     }
     public void sendInfoToOtherClients(){
-
     }
 }
 
