@@ -18,7 +18,6 @@ public class GroupChatServer {
     public GroupChatServer() {
 
         try {
-
             //得到选择器
             selector = Selector.open();
             //ServerSocketChannel
