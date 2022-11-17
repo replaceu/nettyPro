@@ -16,7 +16,6 @@ public class GroupChatServer {
     //构造器
     //初始化工作
     public GroupChatServer() {
-
         try {
             //得到选择器
             selector = Selector.open();
@@ -60,7 +59,7 @@ public class GroupChatServer {
                             System.out.println(sc.getRemoteAddress() + " 上线 ");
                         }
                         if(key.isReadable()) { //通道发送read事件，即通道是可读的状态
-                            //处理读 (专门写方法..)
+                            //todo:处理读 (专门写方法..)
                             readData(key);
                         }
                         //当前的key 删除，防止重复处理
@@ -83,7 +82,6 @@ public class GroupChatServer {
 
     //读取客户端消息
     private void readData(SelectionKey key) {
-
         //取到关联的channel
         SocketChannel channel = null;
 
@@ -100,7 +98,7 @@ public class GroupChatServer {
                 String msg = new String(buffer.array());
                 //输出该消息
                 System.out.println("form 客户端: " + msg);
-                //向其它的客户端转发消息(去掉自己), 专门写一个方法来处理
+                //todo:向其它的客户端转发消息(去掉自己), 专门写一个方法来处理
                 sendInfoToOtherClients(msg, channel);
             }
 
@@ -124,24 +122,21 @@ public class GroupChatServer {
         System.out.println("服务器转发数据给客户端线程: " + Thread.currentThread().getName());
         //遍历 所有注册到selector 上的 SocketChannel,并排除 self
         for(SelectionKey key: selector.keys()) {
-
             //通过 key  取出对应的 SocketChannel
             Channel targetChannel = key.channel();
             //排除自己
             if(targetChannel instanceof  SocketChannel && targetChannel != self) {
-
                 //转型
                 SocketChannel dest = (SocketChannel)targetChannel;
                 //将msg 存储到buffer
                 ByteBuffer buffer = ByteBuffer.wrap(msg.getBytes());
-                //将buffer 的数据写入 通道
+                //将buffer 的数据写入通道
                 dest.write(buffer);
             }
         }
     }
 
     public static void main(String[] args) {
-
         //创建服务器对象
         GroupChatServer groupChatServer = new GroupChatServer();
         groupChatServer.listen();
