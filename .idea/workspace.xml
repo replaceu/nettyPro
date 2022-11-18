@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6f496c-3589-4c45-b499-f38179fa2faa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/eclipseCodeFormatter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/http/CarterHttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/http/CarterHttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/http/CarterHttpServerInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/groupchat/GroupChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/GroupChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/GroupChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/MyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/MyHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/zerocopy/NewIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/nio/zerocopy/NewIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/nio/zerocopy/NewIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/nio/zerocopy/NewIOServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +252,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\NettyPro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroupChatClient">
+  <component name="RunManager" selected="Application.CarterHttpServer">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -259,12 +260,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatClient" />
+    <configuration name="CarterHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.http.CarterHttpServer" />
       <module name="NettyPro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
+          <option name="PATTERN" value="com.atguigu.netty.http.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,13 +274,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.groupchat.GroupChatServer" />
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatClient" />
       <module name="NettyPro" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.groupchat.*" />
+          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -300,13 +301,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.NIOClient" />
+    <configuration name="NewIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.zerocopy.NewIOClient" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.nio.*" />
+          <option name="PATTERN" value="com.atguigu.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,13 +315,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.NIOServer" />
+    <configuration name="NewIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.zerocopy.NewIOServer" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.nio.*" />
+          <option name="PATTERN" value="com.atguigu.nio.zerocopy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -373,19 +374,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NIOServer" />
-      <item itemvalue="Application.NIOClient" />
       <item itemvalue="Application.GroupChatClient" />
       <item itemvalue="Application.GroupChatServer" />
-      <item itemvalue="Application.GroupChatServer (1)" />
+      <item itemvalue="Application.NewIOServer" />
+      <item itemvalue="Application.NewIOClient" />
+      <item itemvalue="Application.CarterHttpServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CarterHttpServer" />
+        <item itemvalue="Application.NewIOClient" />
+        <item itemvalue="Application.NewIOServer" />
         <item itemvalue="Application.GroupChatClient" />
         <item itemvalue="Application.GroupChatServer" />
-        <item itemvalue="Application.GroupChatServer (1)" />
-        <item itemvalue="Application.NIOClient" />
-        <item itemvalue="Application.NIOServer" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +460,9 @@
       <workItem from="1572669726673" duration="606000" />
       <workItem from="1668567073874" duration="15617000" />
       <workItem from="1668605091058" duration="1782000" />
-      <workItem from="1668665115256" duration="6497000" />
+      <workItem from="1668665115256" duration="6500000" />
+      <workItem from="1668737460316" duration="5277000" />
+      <workItem from="1668750870942" duration="5506000" />
     </task>
     <servers />
   </component>

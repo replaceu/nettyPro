@@ -24,12 +24,10 @@ public class NewIOServer {
         while (true) {
             SocketChannel socketChannel = serverSocketChannel.accept();
 
-            int readcount = 0;
-            while (-1 != readcount) {
+            int readCount = 0;
+            while (-1 != readCount) {
                 try {
-
-                    readcount = socketChannel.read(byteBuffer);
-
+                    readCount = socketChannel.read(byteBuffer);
                 }catch (Exception ex) {
                    // ex.printStackTrace();
                     break;
