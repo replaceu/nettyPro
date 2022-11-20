@@ -5,10 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6f496c-3589-4c45-b499-f38179fa2faa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/carterheart/HeartHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/carterheart/HeartServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/buf/NettyByteBuf01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/buf/NettyByteBuf01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/dubborpc/provider/ServerBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/dubborpc/provider/ServerBootstrap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/groupchat/GroupChatServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/MyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/MyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/heartbeat/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/dubborpc/provider/ServerBootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/dubborpc/provider/ServerBootstrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/groupchat/GroupChatServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/groupchat/GroupChatServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServerHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServerHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/MyServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/heartbeat/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/GroupChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/GroupChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/MyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/nio/groupchat/MyHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +245,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="EclipseFormatter" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.24803922" />
   </component>
   <component name="RecentsManager">
@@ -249,7 +263,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\NettyPro" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GroupChatClient">
+  <component name="RunManager" selected="Application.MyServer">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -257,13 +271,24 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="CarterHttpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.http.CarterHttpServer" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatClient" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.http.*" />
+          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,20 +296,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.groupchat.GroupChatClient" />
-      <module name="NettyPro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.groupchat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupChatServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.groupchat.GroupChatServer" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -298,13 +310,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewIOClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.zerocopy.NewIOClient" />
+    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.groupchat.GroupChatServer" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.nio.zerocopy.*" />
+          <option name="PATTERN" value="com.atguigu.nio.groupchat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -312,13 +324,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.nio.zerocopy.NewIOServer" />
+    <configuration name="MyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.heartbeat.MyServer" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.nio.zerocopy.*" />
+          <option name="PATTERN" value="com.atguigu.netty.heartbeat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.heartbeat.Test" />
+      <module name="NettyPro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.netty.heartbeat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -328,19 +354,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -371,19 +384,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NewIOServer" />
-      <item itemvalue="Application.NewIOClient" />
-      <item itemvalue="Application.CarterHttpServer" />
       <item itemvalue="Application.GroupChatClient" />
       <item itemvalue="Application.GroupChatServer" />
+      <item itemvalue="Application.GroupChatServer (1)" />
+      <item itemvalue="Application.MyServer" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyServer" />
         <item itemvalue="Application.GroupChatClient" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.GroupChatServer (1)" />
         <item itemvalue="Application.GroupChatServer" />
-        <item itemvalue="Application.CarterHttpServer" />
-        <item itemvalue="Application.NewIOClient" />
-        <item itemvalue="Application.NewIOServer" />
       </list>
     </recent_temporary>
   </component>
@@ -456,10 +469,8 @@
       <workItem from="1572510401121" duration="1693000" />
       <workItem from="1572669726673" duration="606000" />
       <workItem from="1668567073874" duration="15617000" />
-      <workItem from="1668605091058" duration="1782000" />
-      <workItem from="1668665115256" duration="6500000" />
-      <workItem from="1668737460316" duration="5277000" />
-      <workItem from="1668750870942" duration="8881000" />
+      <workItem from="1668605091058" duration="1942000" />
+      <workItem from="1668787221799" duration="9976000" />
     </task>
     <servers />
   </component>
@@ -538,6 +549,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
