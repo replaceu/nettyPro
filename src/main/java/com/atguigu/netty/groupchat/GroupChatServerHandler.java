@@ -66,7 +66,6 @@ public class GroupChatServerHandler extends SimpleChannelInboundHandler<String> 
         //获取到当前channel
         Channel channel = ctx.channel();
         //这时我们遍历channelGroup, 根据不同的情况，回送不同的消息
-
         channelGroup.forEach(ch -> {
             if(channel != ch) { //不是当前的channel,转发消息
                 ch.writeAndFlush("[客户]" + channel.remoteAddress() + " 发送了消息：" + msg + "\n");
