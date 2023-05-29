@@ -45,6 +45,7 @@ public final class EchoServer {
         }
 
         // Configure the server.
+        //todo:创建了两个EventLoopGroup对象
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {

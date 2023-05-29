@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c6f496c-3589-4c45-b499-f38179fa2faa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/websocket/WebFrameHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/websocket/WebServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/socket/TcpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/socket/TcpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/socket/UdpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/socket/UdpServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/websocket/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/websocket/hello.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/carterheart/HeartServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/carterheart/HeartServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/bio/BIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/bio/BIOServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/source/echo/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/netty/source/echo/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/bio/BIOServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/bio/BIOServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/bio/BIOServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/bio/BIOServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/source/echo/EchoServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/source/echo/EchoServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/netty/source/echo/EchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/netty/source/echo/EchoServer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +256,7 @@
       <recent name="C:\Users\Administrator\IdeaProjects\NettyPro" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.hello.html">
+  <component name="RunManager" selected="Application.UdpClient">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -258,12 +264,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="GroupChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.groupchat.GroupChatClient" />
+    <configuration name="BIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.bio.BIOServer" />
       <module name="NettyPro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.groupchat.*" />
+          <option name="PATTERN" value="com.atguigu.bio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -271,13 +278,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.tcp.MyClient" />
+    <configuration name="TcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.socket.TcpClient" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.tcp.*" />
+          <option name="PATTERN" value="com.atguigu.socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,13 +292,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.websocket.MyServer" />
+    <configuration name="TcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.socket.TcpServer" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.websocket.*" />
+          <option name="PATTERN" value="com.atguigu.socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -299,13 +306,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.netty.websocket.WebServer" />
+    <configuration name="UdpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.socket.UdpClient" />
       <module name="NettyPro" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.netty.websocket.*" />
+          <option name="PATTERN" value="com.atguigu.socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UdpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.socket.UdpServer" />
+      <module name="NettyPro" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -337,9 +358,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hello.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nettyPro/com/atguigu/netty/websocket/hello.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -359,19 +377,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GroupChatClient" />
-      <item itemvalue="Application.MyServer" />
-      <item itemvalue="Application.WebServer" />
-      <item itemvalue="Application.MyClient" />
-      <item itemvalue="JavaScript Debug.hello.html" />
+      <item itemvalue="Application.BIOServer" />
+      <item itemvalue="Application.TcpServer" />
+      <item itemvalue="Application.TcpClient" />
+      <item itemvalue="Application.UdpServer" />
+      <item itemvalue="Application.UdpClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.hello.html" />
-        <item itemvalue="Application.MyClient" />
-        <item itemvalue="Application.WebServer" />
-        <item itemvalue="Application.MyServer" />
-        <item itemvalue="Application.GroupChatClient" />
+        <item itemvalue="Application.UdpClient" />
+        <item itemvalue="Application.UdpServer" />
+        <item itemvalue="Application.TcpClient" />
+        <item itemvalue="Application.TcpServer" />
+        <item itemvalue="Application.BIOServer" />
       </list>
     </recent_temporary>
   </component>
@@ -449,6 +467,13 @@
       <workItem from="1668737460316" duration="5277000" />
       <workItem from="1668750870942" duration="8918000" />
       <workItem from="1668994320202" duration="6876000" />
+      <workItem from="1669103442840" duration="1320000" />
+      <workItem from="1669165952808" duration="59000" />
+      <workItem from="1669174980273" duration="3635000" />
+      <workItem from="1669252366683" duration="8733000" />
+      <workItem from="1669339612255" duration="2973000" />
+      <workItem from="1684223762491" duration="89000" />
+      <workItem from="1685352432734" duration="4112000" />
     </task>
     <servers />
   </component>
@@ -628,6 +653,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/nio/NIOServer.java</url>
           <line>59</line>
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/atguigu/netty/source/echo/EchoServer.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

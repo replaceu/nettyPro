@@ -8,13 +8,10 @@ import java.util.concurrent.Executors;
 
 public class BIOServer {
     public static void main(String[] args) throws Exception {
-
         //线程池机制
-
         //思路
         //1. 创建一个线程池
         //2. 如果有客户端连接，就创建一个线程，与之通讯(单独写一个方法)
-
         ExecutorService newCachedThreadPool = Executors.newCachedThreadPool();
 
         //创建ServerSocket
